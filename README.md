@@ -1,0 +1,1 @@
+# Aplikasi-Pengenalan-Gestur-Tangan-dengan-Suara-Menggunakan-Python-OpenCV-MediaPipe-dan-gTTS-
