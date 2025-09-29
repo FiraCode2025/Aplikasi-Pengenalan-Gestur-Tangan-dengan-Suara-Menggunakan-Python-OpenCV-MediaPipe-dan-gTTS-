@@ -112,10 +112,10 @@ python finger_gesture.py
 
  Gesture                 Pesan                          
 
-☝️ ONE (telunjuk)                   Halo!                           
-✌️ TWO (peace sign)                 Perkenalkan, saya Firamawaty Hia 
-✋ FIVE (telapak terbuka)           Terimakasih                  
-✊ FIST (kepalan)                   Salam kenal                    
+☝️ ONE (telunjuk)                   [Halo!]                           
+✌️ TWO (peace sign)                 [Perkenalkan, saya Firamawaty Hia] 
+✋ FIVE (telapak terbuka)           [Terimakasih]                  
+✊ FIST (kepalan)                   [Salam kenal]                    
 
 7. Tips Agar Stabil
 
