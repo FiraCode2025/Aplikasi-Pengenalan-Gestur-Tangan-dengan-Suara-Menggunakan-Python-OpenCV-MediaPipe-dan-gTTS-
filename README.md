@@ -1,47 +1,144 @@
-# Gesture Recognition with Voice (GTTS + MediaPipe)
+✋ Gesture Recognition + Suara (GTTS) – Panduan Lengkap
 
-Proyek ini adalah aplikasi Python sederhana yang dapat mengenali gesture tangan menggunakan **MediaPipe**, 
-kemudian mengubahnya menjadi suara menggunakan **gTTS (Google Text-to-Speech)**.
+ 1. Persiapan Awal: Install Python
 
-## Demo
-Ketika Anda mengangkat tangan dengan gesture tertentu, kamera akan mendeteksi dan otomatis mengeluarkan suara.
+1. Download Python terbaru (3.10 atau 3.11) dari:
+   👉 [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
-## ⚙️ Instalasi
+2. Saat instalasi:
 
-1. Clone repository atau download folder ini.
-2. Masuk ke folder proyek:
-   ```bash
-   cd GestureRecognition-GTTS
-   ```
-3. Buat dan aktifkan virtual environment (opsional tapi disarankan):
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate   # Windows
-   source venv/bin/activate # Linux/Mac
-   ```
-4. Install semua dependensi:
-   ```bash
-   pip install -r requirements.txt
-   ```
+   * Centang **Add Python to PATH**
+   * Pilih **Install Now**
 
-## ▶️ Menjalankan Program
-Jalankan perintah berikut:
+3. Cek instalasi di **CMD / PowerShell**:
+
+```bash
+python --version
+```
+
+atau
+
+```bash
+py -3 --version
+```
+
+Contoh output:
+
+```
+Python 3.11.7
+```
+
+---
+
+2. Buat Folder Project
+
+1. Buka **PowerShell / CMD**:
+
+```bash
+mkdir GestureRecognition-GTTS
+cd GestureRecognition-GTTS
+```
+
+2. Folder akan berisi:
+
+* File kode utama (`finger_gesture.py`)
+* Daftar library (`requirements.txt`)
+* Dokumentasi (`README.md`)
+* (Opsional) Virtual environment (`venv/`)
+
+---
+
+ 3. Virtual Environment (Opsional tapi disarankan)
+
+```bash
+python -m venv venv
+```
+
+Aktifkan:
+
+* Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+* Mac/Linux:
+
+```bash
+source venv/bin/activate
+```
+
+> Virtual environment menjaga agar library project tidak bercampur dengan Python global.
+
+---
+
+4. Install Library
+
+Buat file `requirements.txt` dan isi library yang dibutuhkan:
+
+```
+opencv-python
+mediapipe
+gTTS
+playsound==1.2.2
+```
+
+Install semua library:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+5. Jalankan Program
+
+Di folder project:
+
+```bash
+py -3 finger_gesture.py
+```
+
+atau
+
 ```bash
 python finger_gesture.py
 ```
 
-## 🤚 Gesture yang Didukung
-- ✋ FIVE → "Terimakasih"
-- ☝️ ONE → "Halo!"
-- ✌️ TWO → "Perkenalkan, saya Fira"
-- ✊ FIST → "Salam kenal"
-
-## 🛠 Troubleshooting
-- Jika `ModuleNotFoundError: No module named mediapipe`, jalankan:
-  ```bash
-  pip install mediapipe opencv-python gTTS playsound
-  ```
-- Jika kamera tidak terbuka, pastikan tidak sedang dipakai aplikasi lain.
+> Tekan **ESC** untuk keluar.
 
 ---
-Dibuat dengan menggunakan **Python, MediaPipe, dan gTTS**.
+
+ 6. Gesture dan Pesan Suara
+
+ Gesture                 Pesan                          
+
+☝️ ONE (telunjuk)      Halo!                           
+✌️ TWO (peace sign)     Perkenalkan, saya Firamawaty Hia 
+✋ FIVE (telapak terbuka) Terimakasih                  
+✊ FIST (kepalan)        Salam kenal                    
+---
+
+7. Tips Agar Stabil
+
+* Pastikan **cahaya cukup**
+* Gunakan **background polos**
+* Jangan terlalu cepat menggerakkan tangan
+* Webcam harus **aktif dan dikenali**
+
+---
+
+ 8. Troubleshooting
+
+* **ModuleNotFoundError** → Pastikan install library sesuai `requirements.txt`
+* **Camera tidak muncul** → Cek webcam aktif, tutup aplikasi lain yang pakai webcam
+* **Suara tidak keluar** → Pastikan speakers/headphones aktif, gunakan versi `playsound==1.2.2`
+
+---
+
+9. Ide Konten Channel
+
+1. Demo **AI Gesture Recognition** langsung live
+2. Tutorial **Membuat Robot Suara dengan Python**
+3. Edukasi **Belajar Python + MediaPipe**
+4. Challenge **Tebak Gesture & Suara** interaktif
+5. Komparasi **Google TTS vs Text-to-Speech lain**
