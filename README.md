@@ -116,7 +116,6 @@ python finger_gesture.py
 ✌️ TWO (peace sign)                 Perkenalkan, saya Firamawaty Hia 
 ✋ FIVE (telapak terbuka)           Terimakasih                  
 ✊ FIST (kepalan)                   Salam kenal                    
----
 
 7. Tips Agar Stabil
 
